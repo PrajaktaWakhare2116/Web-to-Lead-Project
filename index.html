@@ -6,6 +6,7 @@
     <title>Web To Lead</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
 </head>
 <body>
   
@@ -18,7 +19,11 @@
     <input type=hidden 
            name="retURL" 
            value="https://prajaktawakhare2116.github.io/Web-to-Lead-Project/thanks.html">
-           
+
+    <input type=hidden 
+           name='captcha_settings' 
+           value='{"keyname":"WebToLead","fallback":"true","orgId":"00DdM000000X0m1","ts":""}'>       
+
     <input type=hidden 
             name="Lead_Date__c" 
             class="outputdate" />
@@ -41,6 +46,8 @@
     </span><br> -->
     
     <input class="submit" type="submit" name="submit">
+
+    <div class="g-recaptcha" data-sitekey="6Lf-wAIrAAAAAK4wD6rPzXwc8-X0qZOAAlIVPhlT"></div>
     
     </form>
     
